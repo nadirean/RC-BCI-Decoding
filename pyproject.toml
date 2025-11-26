@@ -27,3 +27,17 @@ dev = [
     "pre-commit>=4.5.0",
     "ruff>=0.14.6",
 ]
+
+
+[tool.ruff]
+line-length = 140
+
+[tool.ruff.lint]
+# Config found on: https://www.reddit.com/r/Python/comments/15o73kq/what_ruff_config_do_you_use/
+# Read more here https://beta.ruff.rs/docs/rules/
+# By default, Ruff enables Flake8's E and F rules
+# Pyflakes - F, pycodestyle - E, W
+# flake8-builtins - A
+# Pylint - PLC, PLE, PLW
+# isort - I
+select = ['E', 'F', 'W', 'A', 'PLC', 'PLE', 'PLW', 'I']
