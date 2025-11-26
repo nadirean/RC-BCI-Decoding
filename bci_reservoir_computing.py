@@ -139,7 +139,7 @@ def evaluate(y_true, y_pred):
 
     if isinstance(unique[0], (str, np.str_)):
         names = {"left_hand": "Left Hand", "right_hand": "Right Hand", "feet": "Feet", "tongue": "Tongue"}
-        class_names = [names.get(str(l), str(l)) for l in unique]
+        class_names = [names.get(str(label), str(label)) for label in unique]
     else:
         class_names = [f"Class {i}" for i in unique]
 
