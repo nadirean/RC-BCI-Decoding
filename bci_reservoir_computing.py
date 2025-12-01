@@ -125,7 +125,7 @@ def load_data(subject_id: int | None = 1):
     print(f"\n✓ Loaded: {X.shape}")
     print(f"  Classes: {np.unique(y)}")
 
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42, stratify=y)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
 
     print(f"  Train: {len(X_train)}")
     print(f"  Test:  {len(X_test)}")
@@ -156,7 +156,7 @@ def evaluate(y_true, y_pred):
     plt.figure(figsize=(10, 8))
     sns.heatmap(cm, annot=True, fmt="d", cmap="Blues", xticklabels=class_names, yticklabels=class_names)
 
-    plt.title("Confusion Matrix - RC-BCI", fontsize=14, fontweight="bold")
+    plt.title(f"Confusion Matrix - RC-BCI\nTest Accuracy: {acc * 100:.2f}%", fontsize=14, fontweight="bold")
     plt.ylabel("True Label", fontsize=12)
     plt.xlabel("Predicted Label", fontsize=12)
     plt.xticks(rotation=45, ha="right")
@@ -201,6 +201,7 @@ def main():
     print("RESERVOIR COMPUTING FOR BCI")
     print("=" * 60)
 
+    # using None for loading data for all subjects
     X_train, X_test, y_train, y_test = load_data(subject_id=1)
 
     print(f"\n{'=' * 60}")
