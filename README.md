@@ -1,4 +1,4 @@
-# RC-BCI-Decoding
+# RC-BCI-Decoding 
 
 Reservoir Computing for Brain-Computer Interface motor imagery classification.
 
@@ -32,4 +32,10 @@ The script trains Echo State Networks with different reservoir sizes (100, 200, 
 - Confusion matrices
 - Accuracy comparison plots
 - Classification reports
+
+## Authors
+- Wojciech Bartoszek
+- Dawid Woźniak
+- Mateusz Oracz
+- Jerzy Boksa
 
