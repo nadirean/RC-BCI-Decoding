@@ -1,5 +1,7 @@
 # RC-BCI-Decoding
 
+*Course: Machine Learning Applied to Neuroimaging and Neuroscience · AGH University of Kraków*
+
 Reservoir Computing for Brain-Computer Interface motor imagery classification. Echo State
 Networks (ReservoirPy) decode 4-class motor imagery (left hand, right hand, feet, tongue) from
 EEG epochs of the BNCI2014-001 dataset.
